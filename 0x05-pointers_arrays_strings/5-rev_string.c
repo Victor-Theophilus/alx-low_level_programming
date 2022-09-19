@@ -10,17 +10,29 @@
 
 void rev_string(char *s)
 {
-	 int l, i;
-	 char ch;
+	int i, tmp, len = _strlen(s);
 
-	  /*find string length without null char*/
-	  for (l = 0; s[l] != '\0'; ++l)
+	for (i = 0; i < len / 2; i++)
+	{
+		tmp = *(s + i);
+		*(s + i) = *(s + len - i - 1);
+		*(s + len - i - 1) = tmp;
+	}
+}
 
-		  /*swap the string by looping to half the string*/
-		  for (i = 0; i < l / 2; ++i)
-		  {
-			  ch = s[i];
-			  s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
-			  s[l - 1 - i] = ch;
-		  }
+/**
+ * _strlen - returns the length of a string
+ * @s: string
+ *
+ * Return: the length of the given string
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*(s + len) != '\0')
+		len++;
+
+	return (len);
 }
