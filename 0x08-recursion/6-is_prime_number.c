@@ -21,4 +21,3 @@ int is_divisible(int num, int div)
 
 	return (is_divisible(num, div + 1));
 }
-
