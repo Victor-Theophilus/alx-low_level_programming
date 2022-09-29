@@ -14,6 +14,7 @@ int is_prime_number(int n)
 		return (0);
 	return (is_prime(n, start));
 }
+<<<<<<< HEAD
 
 /**
  * is_prime - returns the 1 if n is prime
@@ -30,3 +31,5 @@ int is_prime(int n, int start)
 		return (0);
 	return (is_prime(n, start - 1));
 }
+=======
+>>>>>>> 5717ea7c53b68b442201ada9d5eba16df6db070b
