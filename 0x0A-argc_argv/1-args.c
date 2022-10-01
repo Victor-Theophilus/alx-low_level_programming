@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints the number of arguments passed into it.
- * @argc: argument count for the program
- * @argv: vector of argument from pointer to string
+ * main - prints the name number of arguments passed to it
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
  *
  * Return: always 0
  */
