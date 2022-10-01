@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - This program prints its name
- * then moves to a new line.
- * @argc: argument count (stores number of cm line argument passed)
- * @argv: vector of string passed
+ * main - prints the name of the program
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
  *
- * Return: Always 0
+ * Return: always 0
  */
-int main(int argc, char *argv[])
+int main(int argc _attribute_((unused)), char *argv[])
 {
 	printf("program's name is: %s\n", argv[0]);
 	return (0);
